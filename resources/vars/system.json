@@ -1,0 +1,64 @@
+{
+    "default_role":{
+        "admin":{
+            "name"        :"Admin",
+            "description" :"System Admin",
+            "is_main"     :1,
+            "is_see_admin":1,
+            "guard_name"  :"web"
+        },
+        "editor":{
+            "name"        :"Editor",
+            "description" :"System Editor",
+            "is_main"     :1,
+            "is_see_admin":1,
+            "guard_name"  :"web"
+        },
+        "user":{
+            "name"        :"User",
+            "description" :"System User",
+            "is_main"     :1,
+            "is_see_admin":0,
+            "guard_name"  :"web"
+        }
+    },
+    "default_permission": {
+        "create_user": {
+            "name"      :"create User",
+            "descpirtion" :"Create User Task",
+            "guard_name":"web"
+        },
+        "edit_user": {
+            "name"      :"Edit User",
+            "descpirtion" :"Edit User Task",
+            "guard_name":"web"
+        },
+        "update_user": {
+            "name"      :"Update User",
+            "descpirtion" :"Update User Task",
+            "guard_name":"web"
+        },
+        "delete_user": {
+            "name"      :"Delete User",
+            "descpirtion" :"Delete User Task",
+            "guard_name":"web"
+        },
+        "show_user": {
+            "name"      :"Show User",
+            "descpirtion" :"Show User Task",
+            "guard_name":"web"
+        }
+    },
+    "default_users": {
+        "admin": {
+            "name"    :"Ahmet",
+            "email"   :"admin@chico.com",
+            "password":"123456"
+        },
+        "user": {
+            "name"    :"Yusuf",
+            "email"   :"user@user.com",
+            "password":"123456"
+        }
+    }
+}
